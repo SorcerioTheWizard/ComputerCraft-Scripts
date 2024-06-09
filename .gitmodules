@@ -1,0 +1,6 @@
+[submodule "OreScanner"]
+	path = OreScanner
+	url = https://gist.github.com/SorcerioTheWizard/6e363dd7186148677fcfd17d169e631b
+[submodule "AE2FlowerHarvester"]
+	path = AE2FlowerHarvester
+	url = https://gist.github.com/SorcerioTheWizard/452d007ca20ebca9b9a0ec6f84b0a036
