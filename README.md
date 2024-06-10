@@ -19,16 +19,23 @@ Each script can be downloaded indivigually onto a ComputerCraft computer in-game
 ### Ore Scanner
 
 A ComputerCraft and Advanced Peripherals script to scan for ores around the player and display the results in a radar.
-
 Requires the [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals) mod to function.
 
-[Found here](https://gist.github.com/SorcerioTheWizard/6e363dd7186148677fcfd17d169e631b).
+```bash
+wget https://gist.github.com/SorcerioTheWizard/6e363dd7186148677fcfd17d169e631b/raw scanner
+```
+
+[Source](https://gist.github.com/SorcerioTheWizard/6e363dd7186148677fcfd17d169e631b)
 
 ### AE-2 Flower Harvester
 
 A Turtle script for automatically harvesting from an Applied Energetics 2 Certus Quarts Grower design.
 
-[Found here](https://gist.github.com/SorcerioTheWizard/452d007ca20ebca9b9a0ec6f84b0a036).
+```bash
+wget https://gist.github.com/SorcerioTheWizard/452d007ca20ebca9b9a0ec6f84b0a036/raw harvest
+```
+
+[Source](https://gist.github.com/SorcerioTheWizard/452d007ca20ebca9b9a0ec6f84b0a036)
 
 ## Installing in ComputerCraft
 
