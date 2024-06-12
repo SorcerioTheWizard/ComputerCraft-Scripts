@@ -60,7 +60,7 @@ function tabulateRegistry()
     local displayStr = ""
     for scriptName, scriptData in pairs(PROG_REGISTRY["progs"]) do
         -- Add the row data
-        displayStr = (displayStr .. "\n" .. scriptName .. ":\n" .. scriptData["desc"] .. "\n")
+        displayStr = (displayStr .. "\n[" .. scriptName .. "]\n" .. scriptData["desc"] .. "\n")
     end
 
     -- Print the registry
