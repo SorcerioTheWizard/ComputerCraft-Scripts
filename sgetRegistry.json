@@ -1,11 +1,11 @@
 {
-    "v": "1.0.0",
+    "v": "1.0.1",
     "progs": {
-        "oreScanner": {
+        "orescanner": {
             "desc": "Scans for ores around the player and display the results in a radar. Requires the Advanced Peripherals mod to function.",
             "url": "https://gist.github.com/SorcerioTheWizard/6e363dd7186148677fcfd17d169e631b/raw"
         },
-        "ae2FlowerHarvester": {
+        "ae2harvester": {
             "desc": "A Turtle script for automatically harvesting from an Applied Energetics 2 Certus Quarts Grower design.",
             "url": "https://gist.github.com/SorcerioTheWizard/452d007ca20ebca9b9a0ec6f84b0a036/raw"
         }
