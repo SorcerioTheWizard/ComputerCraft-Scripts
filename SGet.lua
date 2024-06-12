@@ -130,18 +130,27 @@ function updateScript(scriptName)
     end
 
     -- Check if the script is installed
-    local installedScripts = shell.programs()
-    if not installedScripts[scriptName] then
+    if not fs.exists(scriptName) then
+        -- Ask if user wants to install
+        -- Report
         print(scriptName .. "is not installed.")
-        print("Try running '" .. PROG_NAME .. " " .. ACTION_INSTALL .. " " .. scriptName .. "' to install it.")
-        return
+
+        -- Ask if it should be installed
+        print("Would you like to install it? Yes/No")
+
+        local input = read()
+        if (string.lower(input) == "y") or (string.lower(input) == "yes") then
+            -- Do the install
+            installScript(scriptName)
+        end
+    else
+        -- Conduct an update
+        -- Remove the script
+        fs.delete(scriptName)
+
+        -- Install the script
+        installScript(scriptName)
     end
-
-    -- Remove the script
-    fs.delete(scriptName)
-
-    -- Install the script
-    installScript(scriptName)
 end
 
 -- Function to handle command line arguments.
