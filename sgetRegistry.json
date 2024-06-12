@@ -2,7 +2,7 @@
     "v": "1.0.0",
     "progs": {
         "oreScanner": {
-            "desc": "Scans for ores around the player and display the results in a radar. Requires the Advanced Peripherals mod to function",
+            "desc": "Scans for ores around the player and display the results in a radar. Requires the Advanced Peripherals mod to function.",
             "url": "https://gist.github.com/SorcerioTheWizard/6e363dd7186148677fcfd17d169e631b/raw"
         },
         "ae2FlowerHarvester": {
