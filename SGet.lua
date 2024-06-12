@@ -40,11 +40,15 @@ function fetchRegistry()
     end
 
     -- Parse the registry
-    PROG_REGISTRY = textutils.unserialize(resp.readAll())
-    reso.close()
+    PROG_REGISTRY = textutils.unserializeJSON(resp.readAll())
+    resp.close()
 
-    -- Report
-    print("Fetched the script registry.")
+    -- Check if the registry is valid
+    if not PROG_REGISTRY then
+        error("Failed to parse the script registry.")
+    else
+        print("Fetched the script registry.")
+    end
 end
 
 -- Prints the script registry in a tabulated format.
@@ -53,16 +57,15 @@ function tabulateRegistry()
     fetchRegistry()
 
     -- Build the display table
-    local displayTable = {}
+    local displayStr = ""
     for scriptName, scriptData in pairs(PROG_REGISTRY["progs"]) do
         -- Add the row data
-        local row = {scriptName, scriptData["desc"]}
-        table.insert(displayTable, row)
+        displayStr = (displayStr .. "\n" .. scriptName .. ":\n" .. scriptData["desc"] .. "\n")
     end
 
     -- Print the registry
-    print("Available scripts:")
-    textutils.pagedTabulate(table.unpack(displayTable))
+    print("\nAvailable scripts:")
+    textutils.pagedPrint(displayStr, 5)
 end
 
 -- Checks if the specified script is in the script registry.
@@ -178,6 +181,7 @@ function handleCli(action, ...)
         elseif action == ACTION_UPDATE then
             -- Update the script
             updateScript(scriptName)
+        end
     -- elseif action == ACTION_UPGRADE then
     --     -- Upgrade action
     --     -- TODO: How do you even do this since this script is running?
