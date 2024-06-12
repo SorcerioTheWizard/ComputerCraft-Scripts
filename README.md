@@ -53,8 +53,11 @@ It provides an easy way to install and keep your programs up to date.
 To use the `sget` installer to install a script onto your in-game ComputerCraft computer do the following:
 
 1. Open your in-game ComputerCraft computer.
-1. Install `sget`: `wget https://github.com/SorcerioTheWizard/ComputerCraft-Scripts/raw/master/SGet.lua sget`
-1. Use `sget list` to list all available programs or `sget install <SCRIPT_NAME>` to install a specific script.
+2. Install `sget`:
+    ```bash
+    wget https://github.com/SorcerioTheWizard/ComputerCraft-Scripts/raw/master/SGet.lua sget
+    ```
+3. Use `sget list` to list all available programs or `sget install <SCRIPT_NAME>` to install a specific script.
 
 ### Manual Installation
 
