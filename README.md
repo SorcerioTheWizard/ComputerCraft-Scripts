@@ -1,3 +1,16 @@
+> [!WARNING]
+> **This repository has been archived!**
+>
+> `sget` has been replaced by the much superior [Computer Craft Package Manager](https://github.com/SorcerioTheWizard/ComputerCraft-Package-Manager).
+>
+> The AE2 Harvester and Ore Scanner are now available through the CCPM registry.
+>
+> All future updates will be served there.
+>
+> Archived `README.md` text persists below.
+
+---
+
 # Sorcerio's Computer Craft Scripts
 
 - [Sorcerio's Computer Craft Scripts](#sorcerios-computer-craft-scripts)
